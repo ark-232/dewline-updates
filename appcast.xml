@@ -1,10 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><!-- sparkle-sign-warning:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- sparkle-sign-warning:
 IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
---><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+-->
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Dewline</title>
+        <item>
+            <title>0.1.0</title>
+            <pubDate>Tue, 03 Nov 2026 03:54:34 +0000</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/ark-232/dewline/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>73</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+The first public build. Dewline is a native Markdown editor for Mac: it opens the .md files you already keep, in place, and renders them as you write. Links, embeds, math, diagrams, export and live collaboration are built in, and every save changes only what you edited. No account and no telemetry.
+
+- Open any Markdown file and edit it in place. Syntax hides until the caret reaches it; tables, task boxes, footnotes, callouts and highlighted code render in the page, and math and Mermaid diagrams are drawn natively. Wikilinks, embeds and #tags follow Obsidian's syntax.
+- Saves change only the bytes you edited, and never overwrite a newer version on disk. File > Snapshots restores an earlier version of the file. Export to HTML, PDF or DOCX, and preview .md files in Finder with Quick Look.
+- Open a folder or an Obsidian vault in place. A sidebar for the folder and your agent files, tabs, Quick Open (Shift-Command-O), find in files (Shift-Command-F) and one palette for files, commands and settings (Shift-Command-P).
+- Edit a file live with someone by invite link, peer to peer.
+- Six themes plus a pack of four, installable fonts, Vim mode, a Source view, and focus and typewriter modes.
+- When git, a sync app, a script or a coding agent changes the open file, Dewline marks each change, and names the agent when its hooks report it. Keep or revert each one, or all at once; Dewline snapshots the file first.
+- `dewline open file.md:12 --wait` works as `$EDITOR`, `dewline notify` lets agent hooks name their edits, and `dewline mcp` serves a folder's notes to an agent.
+]]></description>
+            <enclosure url="https://github.com/ark-232/dewline/releases/download/v0.1.0/Dewline-0.1.0.dmg" length="20539770" type="application/octet-stream" sparkle:edSignature="ZPlNMCy2vYkLVV2fNAnR+3tTr5x/I3oyBotZEvwyBdbwr7M7iSht6lGwthqxDyybTkV/HDLPJfNae3v/foc/AQ=="/>
+        </item>
     </channel>
-</rss><!-- sparkle-signatures:
-edSignature: YSd9zeoV6gehfBkGti5zQ9Uo8qa80PYxwEuDbwQVT9SZAHhRT5YAXtYAmY2Ox4LM1Jyt5/G2ZWDEX+ndr9yHAA==
-length: 445
+</rss>
+<!-- sparkle-signatures:
+edSignature: 3oriaVMPa3t/kNrjzWWxSpRdyoAF1u/CcH116L5kpyjjee4AUbq3zdUpBfLXjxCXFwSxmvJ3WFDFDkVE8AvVCA==
+length: 2908
 -->
