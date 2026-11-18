@@ -6,6 +6,35 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Dewline</title>
         <item>
+            <title>0.2.0</title>
+            <pubDate>Wed, 18 Nov 2026 17:29:40 +0000</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/ark-232/dewline/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>131</sparkle:version>
+            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+Notes save themselves, undecided changes survive closing, and export gains seven more formats; live collaboration, the agent chat panel, Follow Changes, the Preview pane and the font catalog are gone.
+
+- Closing a tab, quitting, sleeping the Mac or switching apps saves your notes with no save sheet. Typing without a pause saves within 10 seconds. When a save is refused, the status bar says why and offers Save Now, and the text is kept as a draft that reopening the note offers to restore. Symlinked notes save in place.
+- Changes you have not decided on survive closing a tab and quitting, and reopening shows them at the same lines. A write to a closed note by another app, or while Dewline was quit, shows up as marked changes when you open it, and the sidebar badges the note with the writer and the count. Reading a note no longer credits an agent for someone else's later write.
+- A new look: the window, toolbar, tab strip and sidebar are redrawn, with a new palette, Seravek for text and SF Mono for code. The scroller rail shows headings and waiting changes, each change is reviewed at the change, and the sidebar shows each file's git status.
+- Tab and Shift-Tab move between table cells, and Tab in the last cell adds a row. Format > Insert Row and Insert Column edit a table. View > Zoom In, Zoom Out and Actual Size (Command-+, Command-- and Command-0) resize the text. Pasted JPEG, GIF, WebP and PNG images keep their original bytes. Edit > Copy as Markdown and Copy as HTML, and pasting from a web page or Mail gives Markdown.
+- Export to plain text, RTF, OpenDocument, EPUB, LaTeX, PNG and portable Markdown, besides PDF, Word and HTML. Portable Markdown turns wikilinks into relative links and copies images beside the file.
+- Code blocks highlight 50 languages, in Quick Look too. Hovering a block shows its language and a Copy button. Settings > Editor has Open code files, off by default: with it on, code files open in the editor as code, with the same highlighting, line numbers and no Markdown rendering.
+- Find in Files takes regular expressions, a `path:` filter and a Replace field. Replace All asks first, counts what it changed, and is one undo in an open note.
+- View > Sidebar Outline swaps the tree for the note's headings. Typing [[ lists the folder's notes. Renaming a note in the sidebar rewrites the links to it across the folder, and undo points them back. View > Backlinks lists the notes that link to the open note and opens each one at its link.
+- The `.claude`, `.cursor` and `.github` folders and `.mdc` files show in the tree, Quick Open and Find in Files. `dewline open <folder>` opens a folder in its window, and File > Open Recent lists recent folders and notes.
+- Settings has four panes: General, Editor, Appearance and Agents. There are four themes: Tidewater and Onionskin for light, Nightwatch and Carbon for dark, and a retired theme becomes the nearest of these. Body, headings and code take any font on your Mac. Link previews stay off until you turn them on in Settings > Editor.
+- File > Capture is the one place in the app that adds a line to your inbox. The Service, the App Intent, `dewline capture` and MCP work as before, and Settings > General holds the inbox path.
+- Agent setup skips agents you have not installed and says when Codex needs to trust Dewline's hooks. Edits made with curly quotes or in CRLF files are matched, so more agent edits carry the agent's name, and a failed edit no longer delays the next change. A nightly test runs Claude Code and Codex against these checks.
+- Removed: live collaboration is off for now, so Share, Join Shared Note and `dewline://join` are not in this build. The agent chat panel, Follow Changes, the Preview pane, the font catalog and installable fonts, the extra theme pack, and the daily note, Dock capture and capture shortcut are gone.
+- Security fixes in the URL scheme and in LaTeX and EPUB export.
+
+]]></description>
+            <enclosure url="https://github.com/ark-232/dewline/releases/download/v0.2.0/Dewline-0.2.0.dmg" length="14607204" type="application/octet-stream" sparkle:edSignature="slUxvIK1zQZKOF/t8k/37St4rirAuc6BtjK4JWd8X+IC9qDvv8Sw950QFH7Y0cBYZJNRqwiokGarRNPiR/+oAg=="/>
+        </item>
+        <item>
             <title>0.1.1</title>
             <pubDate>Tue, 03 Nov 2026 08:44:37 +0000</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/ark-232/dewline/releases</sparkle:fullReleaseNotesLink>
@@ -53,6 +82,6 @@ The first public build. Dewline is a native Markdown editor for Mac: it opens th
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: uvoaQ7VUEM4jniTMXVbdzqP6MQTzDkaDwKiXsY7xB5K7rLFgk7SLjzE5f5ivN+IY0zJfcKpEElN2BGSbXjaHDQ==
-length: 4840
+edSignature: DcMXkvPWfedyyaLtDqOXs1hqUayMgnwUT+0xG/m5cjaZmK0M3dY9kWoYY8JoXITNsnMNaD1X9En47pb4aP4vDw==
+length: 9634
 -->
