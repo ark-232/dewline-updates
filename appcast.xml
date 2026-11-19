@@ -6,6 +6,30 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Dewline</title>
         <item>
+            <title>0.5.0</title>
+            <pubDate>Thu, 19 Nov 2026 20:26:33 +0000</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/ark-232/dewline/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>168</sparkle:version>
+            <sparkle:shortVersionString>0.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+First launch shows one sheet, and a note ignored by git no longer opens unmarked after an agent writes to it.
+
+- First launch offers to install agent hooks and no longer stacks the default-app sheet on Welcome; Settings > General still sets the default app. (#181)
+- Dewline offers to install agent hooks once for each folder holding `.claude`, `.cursor`, `.codex`, `CLAUDE.md` or `AGENTS.md`. In 0.4.0 the first offer was the only one, so a later agent folder was never offered. (#181)
+- Settings > Agents shows hooks as set up right after Set Up finishes. (#181)
+- Command-T in a window with no folder asks for one, like Command-N; Cancel opens no tab. (#181)
+- An agent write to a note that `.gitignore` ignores, such as `CLAUDE.local.md`, is marked again. This corrects 0.4.0, which skipped ignored notes. The scan lists tracked notes first, then ignored ones, newest first, within the 10,000-note cap. (#183)
+- A scan of closed notes also covers `.mdx` and `.qmd` files and the `.agents`, `.codex`, `.kiro`, `.ruler`, `.specify` and `.windsurf` folders. (#183)
+- Marks are kept on every landing of an outside change, including one that lands into unsaved typing or mid-conflict. (#183)
+- A save that waits more than 5 seconds on another app, such as a sync client, fails and retries, so quitting no longer hangs behind it. (#183)
+- README and the site state iCloud and iPhone behavior as designed: the device test in `docs/sync.md` has not been run. The README no longer quotes the 0.1.0 performance run. (#182)
+
+]]></description>
+            <enclosure url="https://github.com/ark-232/dewline/releases/download/v0.5.0/Dewline-0.5.0.dmg" length="14443641" type="application/octet-stream" sparkle:edSignature="0gyuhPOgjiO+VM7WOuhQG5CAbNUIbYIU/X4ZkCYbxdct2NUEN4IU+IT3SOO/MTlkcHe0pVYM0PK0y+BzfbnVDg=="/>
+        </item>
+        <item>
             <title>0.4.0</title>
             <pubDate>Thu, 19 Nov 2026 18:50:23 +0000</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/ark-232/dewline/releases</sparkle:fullReleaseNotesLink>
@@ -139,6 +163,6 @@ The first public build. Dewline is a native Markdown editor for Mac: it opens th
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: iuOvDa++rJbeEcPMB8DVA386sx0ebxvV0GAkqso4E9G0Nj7Hxd+SCGNWL/ED5PnPkJp/wTCaijymoFLKtN+gCg==
-length: 17444
+edSignature: d4DLT3N0r7xw+dc66lnqFcyexeRxgR6ISh930jrkWgnMY+Rn68g9JsdSyfqjrGIa0v8dyghZ4L6u0zfbEZIiDg==
+length: 19840
 -->
