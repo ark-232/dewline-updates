@@ -6,6 +6,34 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Dewline</title>
         <item>
+            <title>0.3.0</title>
+            <pubDate>Thu, 19 Nov 2026 03:47:53 +0000</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/ark-232/dewline/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>154</sparkle:version>
+            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+iCloud conflicts ask which version stays, files you open from Finder get the right folder, Revert works after you type around a change, and agent edits from shell commands and Cursor are marked.
+
+- When iCloud keeps two versions of a note, a sheet names the other version's device and time and asks which stays. Use the Other Version lands as a marked change that Revert undoes. Saves now go through file coordination, so iCloud sees them. Welcome and the docs have a new Sync and mobile page. (#146, #165)
+- A file opened from Finder, `dewline open` or Open Recent opens in the window whose folder holds it, else on its git root, else on its parent folder. Command-N there writes in that window's folder. The open tabs are saved as you change them, so a crash reopens them. Many tabs on one folder share one watch and one scan. (#147)
+- A note in your home folder opens as a single-file window instead of scanning all of home and `~/Library`. Closing or quitting after another app deletes a note you have typed in shows the save sheet. Settings > General and a first-launch sheet offer to make Dewline the default app, and `.mdc`, `.mdx` and `.qmd` files open from File > Open and Open With. Code file types leave Open With. (#164)
+- A change from a Claude Code shell command is marked "During Claude Code's shell command" instead of Another app. Setup installs Cursor hooks, so Cursor's file edits carry its name; Settings shows Codex as Needs trust until you trust it. (#149)
+- Revert works after you type next to a change and keeps your typing. When you typed inside the change, the stamp says so. (#155)
+- The sidebar, Quick Open, Find in Files and [[ completion follow .gitignore the way git does: nested files, `.git/info/exclude`, your global ignore file, and negations. `[[` completion lists notes without freezing the window. (#153, #150, #166)
+- Git status shows a staged rename with edits as Renamed, and a rename into a subfolder as Renamed. (#150)
+- Exported HTML, PDF and the preview page color code blocks. (#150)
+- Source mode shows line numbers. The scroller rail ticks H1, H2 and H3. Wide Mermaid flowcharts fold into bands so labels stay readable, and inline code in a wrapped table column no longer breaks at a slash. (#151)
+- A new note takes its name from its first line when you leave it or close it, Command-T notes too, and an empty Untitled note you never typed in is removed when you close it. File > Share is the system share menu. (#156)
+- Return in a CRLF note inserts CRLF. Links to a note follow it when you rename it from File > Rename, drag it in the sidebar, or move or rename its folder. Replace All and link rewrites in closed notes show as yours, not Another app. (#166)
+- Only Markdown files list as changed while a note is closed; a hooked write to a `.env` or other file no longer does. Notes in `.claude`, `.cursor` and `.github` get closed-note changes, and `.mdc` files count as Markdown. Marks for undecided changes survive a crash. (#165)
+- Security fixes: a dangling symlink as the last part of a note path is refused, so a save cannot follow it to `~/.ssh`; moving a symlinked folder no longer rewrites the files it points to; and a Rust panic in any of twenty core calls shows an error or an empty result instead of crashing the app. (#157, #158, #168)
+
+]]></description>
+            <enclosure url="https://github.com/ark-232/dewline/releases/download/v0.3.0/Dewline-0.3.0.dmg" length="14496646" type="application/octet-stream" sparkle:edSignature="oLkm3+nUNkmYD399mcclcwHtYr0k7dHN4Y7RtLT+LP4RMoXmLbYtqcaCyiBJnlKbFOuzfUHgJ/pBmz5mHf/fDw=="/>
+        </item>
+        <item>
             <title>0.2.0</title>
             <pubDate>Wed, 18 Nov 2026 17:29:40 +0000</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/ark-232/dewline/releases</sparkle:fullReleaseNotesLink>
@@ -82,6 +110,6 @@ The first public build. Dewline is a native Markdown editor for Mac: it opens th
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: DcMXkvPWfedyyaLtDqOXs1hqUayMgnwUT+0xG/m5cjaZmK0M3dY9kWoYY8JoXITNsnMNaD1X9En47pb4aP4vDw==
-length: 9634
+edSignature: l86RsGy5K9j7Rrp0FthgOEbInQ37a32hED8xJJK8KHFZs+in+wP+j26bxRs+e65ogtXFjzNuqZDfansIVYAQBg==
+length: 13816
 -->
