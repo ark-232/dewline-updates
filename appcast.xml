@@ -6,6 +6,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Dewline</title>
         <item>
+            <title>0.5.1</title>
+            <pubDate>Thu, 19 Nov 2026 21:37:58 +0000</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/ark-232/dewline/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>170</sparkle:version>
+            <sparkle:shortVersionString>0.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+- Math, Mermaid diagrams and images are sharp on Retina screens. Math and diagrams are drawn as vector outlines at the screen's own scale, and redraw when a window moves between screens.
+- Math and diagram labels use the same text color as the note, and diagram lines and borders follow the theme, so they no longer look faded next to the text.
+- Images keep their own color profile.
+
+]]></description>
+            <enclosure url="https://github.com/ark-232/dewline/releases/download/v0.5.1/Dewline-0.5.1.dmg" length="14539490" type="application/octet-stream" sparkle:edSignature="xxEapGdfw1/a58MwvgNG6ZB4BpD9vUrPkFngp+XqjQAxGRLgktg45pGPA7fQTCa1yvUV/DOakC7VaOdJOsV7DA=="/>
+        </item>
+        <item>
             <title>0.5.0</title>
             <pubDate>Thu, 19 Nov 2026 20:26:33 +0000</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/ark-232/dewline/releases</sparkle:fullReleaseNotesLink>
@@ -163,6 +179,6 @@ The first public build. Dewline is a native Markdown editor for Mac: it opens th
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: d4DLT3N0r7xw+dc66lnqFcyexeRxgR6ISh930jrkWgnMY+Rn68g9JsdSyfqjrGIa0v8dyghZ4L6u0zfbEZIiDg==
-length: 19840
+edSignature: 0mLqr6s7sEEcUssvVsK/QdbUlp6S4iU4hG8GwZ1bmson5DlylVhdnwqg9dOyFYsOclLpZ/jaKGLp7SZ6PunnCA==
+length: 21103
 -->
