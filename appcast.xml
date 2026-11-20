@@ -6,6 +6,116 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Dewline</title>
         <item>
+            <title>0.6.0</title>
+            <pubDate>Fri, 20 Nov 2026 18:09:37 +0000</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/ark-232/dewline/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>200</sparkle:version>
+            <sparkle:shortVersionString>0.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+Agent edits are easier to review from the keyboard and across a whole folder, uncommitted git changes show as marks, the window behaves more like a Mac app, and Typst and LaTeX files typeset in a sandbox.
+
+- A file deleted since the last commit stays in the sidebar as a struck-through row; clicking it opens the Changes pane.
+- The sidebar's folder header shows how many files changed since the last commit and how many commits the branch is ahead of its upstream ("main ↑2 · 7 changed"); Activity carries the same line while the sidebar is collapsed. Changed files' context menus add Review Uncommitted Changes.
+- Filled chrome buttons use the theme accent with paper text.
+- Under Full Keyboard Access, chrome buttons, the folder pop-up and the tab strip take the focus with the system's focus ring and act on Space or Return; the arrow keys move between tabs. A list that has the keyboard shows its selection as a solid accent pill.
+- Find in Files results use the theme's inks.
+- Dragging a tab slides its neighbors aside as it passes; dragging it out of the strip drags the note's file. The unsaved dot sits where the close button appears on hover, Command-click on a tab shows the note's path, and the tab's tooltip names its Option-Command key.
+- Chrome type follows the macOS text styles; chevrons and the tab close button are SF Symbols. Activity and the sidebar's … menu open on mouse down, and Activity dims instead of hiding while you type. Command-Down Arrow opens the selected sidebar row.
+- Set Up Agent Hooks refuses to run from a disk image or a translocated copy, whose path is gone once it ejects, and offers Move to Applications and Relaunch; the first launch offers the move too, and `dewline doctor --install-hooks` refuses the same paths.
+- The hook setup sheet lists every event it adds for each agent and what each group is for, says the hooks apply in every project (your user settings), and that they send paths and hashes, never file content.
+- Welcome.md puts "Show me a change" above the explanation, in the accent with a full underline, a pointing hand and the tip "Click to see a change"; its "Settings > Agents" opens the hook setup sheet.
+- The first agent change in a session says in the status bar: "First change from Claude Code. Keep or Revert it here."
+- The launch window shows the brand lockup, says "Open the folder your agent works in. Its edits show up marked, ready to keep or revert." when it lists nothing, and Return opens the selected recent instead of making a new note (⌘N still does).
+- The demo's writer is "Demo agent" on its stamp and in Earlier Versions, and its paragraph says the stamp reads CLAUDE, CODEX or CURSOR once hooks are set up.
+- Earlier Versions tints restored and removed lines in the theme's colors.
+- The window goes as narrow as 420 pt with the sidebar and Changes pane closed, so it shares a laptop screen with a terminal; below 700 pt the sidebar collapses on its own and comes back when the window widens. The Changes pane can narrow to 260 pt.
+- Changes (⇧⌘R) takes the keyboard on the first change; pressed again it hands the keyboard back to the note. In the list, J and K move, Y or Return keeps, X reverts, O reveals. Vim's ]c and [c are Next and Previous Change, and the command palette finds Changes by "Diff" or "Review".
+- Next Change (⌃⌘↓) past the last change in the open notes opens the next note waiting, changed while closed or since the last commit, at its first change, and the status bar says how many more wait.
+- The folder page lists notes deleted since the last commit; opening one shows its committed text, read-only.
+- With agent hooks on, the folder page offers Copy a Test Prompt to make the first marked change.
+- Keep on the change stamp and Keep Yours on the conflict card fill with the theme's accent instead of the system accent.
+- Changes rows show a change over several lines as "+N / −M lines" and open it in full with → or Space; note headings show the path in the folder, session names are small section labels, and changed words take the writer's ink instead of bold.
+- The change stamp reads "CLAUDE 3:25 PM · saved · 1 of 2", shows Next Change's keys only under the pointer or once you've decided a change, draws its shortcuts as keycaps, and its tooltips read "Option-click: Keep All (⇧⌘↩)".
+- The status bar keeps its line in a folder window so messages no longer move the note, reads results and problems to VoiceOver, and shows a problem ahead of a request.
+- Revert on a change you typed inside asks first, showing what it puts back, instead of refusing.
+- Code blocks highlight in a fixed band against the paper, keywords in the accent's hue, so tokens read apart from the text in light and dark themes.
+- Headings step by 1.25 from the body: 31, 25, 20 and 16 pt at the default size, so H3 no longer matches body text.
+- Edit has Paste and Match Style (⌥⇧⌘V), Delete, and Spelling and Grammar, Substitutions and Transformations submenus; Find has Find and Replace… (⌥⌘F), Use Selection for Find (⌘E) and Jump to Selection (⌘J); File > Duplicate takes ⇧⌘S. Smart Punctuation moves into Edit > Substitutions.
+- Go to Line… (⌘L) opens Quick Open on its line scope instead of a dialog.
+- Settings > Appearance sets line height on a slider from 1.3 to 1.6.
+- Writers' inks keep their hue on a dark page: Claude, Codex, Cursor, Gemini and Copilot read at full color and at least 4.5:1.
+- Images on a dark page draw at 90% brightness inside their faint rim.
+- Display math is centered in the column.
+- A table column of numbers aligns right unless its delimiter row sets an alignment. The head sits one row above the first row with a single rule under it, and columns have no rules between them.
+- Typst and TeX sources always show in the code face.
+- A change that lies wholly inside hidden markup, such as a link's new target, shows that markup, so its mark no longer sits on nothing.
+- The Changes segment counts what the toolbar counts: every change waiting in the window's notes and in notes changed while closed.
+- The change stamp stays in the margin when the Changes pane opens, compact ("CLAUDE · 1 of 3" over icon buttons) where the full stamp won't fit, so toggling the pane no longer reflows the note. Revert and Keep share one width, the counter always reads "1 of N", and the full stamp shows Next Change's keys (⌃⌘↓). Only the stamp at the caret, or under the pointer, shows its buttons.
+- Changes list rows show the text around the change, with Markdown markers taken out; Revert Session and Keep Session are buttons, Keep filled.
+- The rail's change label stays in the right margin, shortening the heading or dropping "Changes show here too" to fit, shows Next or Previous Change's keys, and stays hidden while the Changes pane is open. A note with no changes that fits on screen shows no rail track.
+- A folder window with no note open lists the notes waiting for review: marked changes, changes made while closed and notes git reports changed, each opening on Return or a click. Open CLAUDE.md is the default button, beside Set Up Agent Hooks… at the same width.
+- A tab with changes waiting shows the sidebar's writer badge with the count, in place of the dot.
+- Edit > Revert Session (⌃⌘⌫) and File > Earlier Versions… (⌥⌘Y) have shortcuts, and the title bar has a sidebar toggle.
+- A window opening on its own takes at least 1200 x 760 pt, or the whole screen when it is smaller.
+- The rail follows the system's scroll bar setting: when scroll bars show only while scrolling, it shows while the note scrolls or the pointer is on it.
+- The sidebar uses the system's sidebar material.
+- The selected tab no longer carries an orange bar; every tab shows its close button under the pointer.
+- Quick Open no longer dims the window behind it.
+
+- An agent's edit marks one change per stretch of a line: word edits a few characters apart join, and a line more than 40% rewritten shows struck whole with the new line under it.
+- Earlier Versions names a hooked write's snapshot after its agent even when the hook reports after you decide the change, keeps a reverted change's save as "You (Revert)", and no longer adds an "Another app" copy of the version a reopened note already ends with.
+- Earlier Versions names the note in its heading, shows seconds when two versions share a minute, pins with a pin symbol, previews the whole difference with tinted lines and a +/− gutter, moves between versions with ↑ and ↓, and hides scroll bars with nothing to scroll.
+- The Welcome demo swaps a word in place ("revert" becomes "undo"), so one of its two changes is a true replacement.
+- The hook setup sheet is titled "Let Dewline see which agent made each edit", says it adds one local command (dewline notify) to PreToolUse and PostToolUse, that nothing leaves the Mac and where to remove it; it shows the backup's whole name, lines up with the text above it, and shortens long paths in the middle.
+- Settings &gt; Agents gives each agent its own Set Up… or Remove, shows Codex as Not set up, Installed, needs trust, or Active, and says when each agent last named an edit. Set Up All Hooks… sits at the trailing edge.
+- Settings: rows of a disabled group dim with their switches, panes grow to the screen's height before they scroll, the four theme cards sit in one row under Light and Dark, every menu choice uses one pop-up style, Restore Defaults has a bezel, "Never" is set in the label face, and the font preview's sample heading reads "Public beta plan".
+- Settings is a standard grouped form with the system's switches, pop-up menus, steppers and buttons; each pane is as tall as its settings.
+- Find in Files puts its options on a second row so the field spans the sidebar, shows Regular Expression as ".*", adds a close button back to Files, and says what a search with no matches looked in, with a button that turns its options off. Snippets start a few words before a match far along its line, results sit on the sidebar's inset, and Replace All with an empty field asks to delete.
+- Quick Open no longer lists Open Recent's files or the Window menu's windows as commands, sets matched letters in semibold without an underline, gives notes a document symbol, and starts commands at the header's inset.
+- The sidebar puts a note's writer badge and git's letter together at the trailing edge; a closed folder shows a dot per writer.
+- A note git reports modified opens with its changes since the last commit marked, listed in Changes under Uncommitted; clicking its "M" in the sidebar opens that list. Keep only clears the marks: nothing is staged or committed. Changes an agent made while the note was closed, or marks left undecided, still come first.
+- The Export panel's Format menu lines up with the panel's own labels and fields.
+- An agent's write that adds list items no longer drops the bullet of the item after them.
+- Ticking a task box in an agent's change no longer shifts its row to the right.
+- A change's highlight leaves out the blanks at its ends and runs unbroken across inline code; code spans get rounded chips.
+- Inserted text is underlined with dots, so it no longer reads as a link, and each change gets one bar in the margin.
+- A long line in fenced code wraps one indent past its own indentation instead of at the block's left edge.
+- Spell check skips hyphenated words such as `at-least-once` and inline math, whose marks drew a red dot after the formula.
+- Table columns of numbers use tabular figures, and images on a dark page get a faint rim.
+- The Welcome demo's writer is named Example.
+- The sidebar shows git's state as one letter (M, A, R, D, U) in a fixed column, with the word in its tooltip, so the file under review keeps its name. A long name loses its middle, not its end. A closed folder shows a dot when a file under it changed since the last commit.
+- A folder window with no note open shows no tab.
+- Edit > Copy Relative Path (⌥⇧⌘C) copies the note's path under the folder; file rows and tabs have it in their menus.
+- Go > Reveal in Sidebar (⇧⌘J) selects the note's row and puts the keyboard on the sidebar.
+- Tabs for notes with the same name add the folder that tells them apart ("spec.md · api").
+- A tab with changes waiting shows a dot in the writer's ink, and its tooltip says how many.
+- Edit > Keep Session (⌥⇧⌘↩) keeps every change of the session.
+- "No folder open" lines up with the sidebar's Outline header.
+- The hook setup sheet says in one sentence what hooks do and that agent edits still show without them, labeled Another app; it lists each settings file and its backup's name, and Show Details lists the JSON entries each file gains.
+- `dewline doctor --remove-hooks` takes Dewline's hooks out of each agent's settings, keeping a backup; `--agent` limits it, or `--install-hooks`, to one agent. Plain `dewline doctor` prints the entries `--install-hooks` would add.
+- Settings > Agents shows each agent's hook status with a symbol, with Set Up, Remove and Show File beside it.
+- Dewline no longer offers hook setup after the demo, only when a folder with agent files opens. Not Now applies to that folder; Don't offer again stops every offer.
+- Welcome.md leads with what Dewline does for agent edits and the demo link, says what Keep and Revert do, and uses curly quotes. The demo writes two changes, a replace and an insert.
+- A folder window with no note open says Dewline is watching the folder, shows whether agent hooks are on, and opens CLAUDE.md or README.md in one click.
+- Settings panes size to their content, and the selected theme's name keeps its weight.
+- Recent notes and folders in the launch window show how many changes wait for review.
+- With Open code files on, `.typ` files open as highlighted Typst. After Dewline saves a `.typ` or `.tex` file, or an agent's write lands in it, Dewline typesets it with the `typst`, `latexmk` or `tectonic` you have installed; the status bar shows errors with Go to Line, and error lines number in red. File > Export writes the PDF. Dewline bundles no compiler.
+- A scan of closed files also covers `.typ` and `.tex`, so an agent's write to one while it was closed opens marked.
+- `dewline doctor` lists `latexmk` and `tectonic`.
+- latexmk runs each LaTeX engine with shell escape off and TeX refusing absolute and parent-folder paths, so a `.tex` file can't run commands or pull outside files into its PDF. A `% !TEX root` outside the folder stops the typeset with an error.
+- typst, tectonic and latexmk run in a sandbox that reads only the folder, system and TeX folders, so a symlink in a cloned repo can't pull a file such as `~/.ssh/id_ed25519` into the PDF; only typst and tectonic reach the network. Inside it they run only toolchain programs and can't open other apps. latexmk refuses file names other than letters, digits, space, dot, dash and underscore, skips bibtex, biber and makeindex, and runs lualatex with `--safer --nosocket`.
+- A change's stamp reads "1 of 3" and its buttons stay Keep and Revert at a fixed width, turning into icons where the margin is narrow. Holding Option turns them into Keep All and Revert All, and their tooltips say what each does.
+- The Changes list groups changes by writer session, closed notes included, under a heading with Keep Session and Revert Session. Its bylines survive a relaunch and its rows are 24 pt.
+- Status bar problems show a red octagon, and their actions are buttons. A typeset error inside a marked change says whose change it is and offers Revert Change.
+- The rail's on-screen bracket has a light fill, and the first change ever to land is labeled on the rail, "Changes show here too".
+- README and the site say Dewline is free to start. Decision 0011 replaces 0001's pricing promise: every feature in the app is free for everyone, and paid plans cover only services that run on our servers.
+
+]]></description>
+            <enclosure url="https://github.com/ark-232/dewline/releases/download/v0.6.0/Dewline-0.6.0.dmg" length="16478490" type="application/octet-stream" sparkle:edSignature="Djks9bmGG47XzxvW5t0Oadpqvd3HUFbeqJyCmcFWWePNiAWYocW+p/KzgDe4IUoVuTZO3RGxQBZPr6MtwbGuDg=="/>
+        </item>
+        <item>
             <title>0.5.1</title>
             <pubDate>Thu, 19 Nov 2026 21:37:58 +0000</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/ark-232/dewline/releases</sparkle:fullReleaseNotesLink>
@@ -179,6 +289,6 @@ The first public build. Dewline is a native Markdown editor for Mac: it opens th
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 0mLqr6s7sEEcUssvVsK/QdbUlp6S4iU4hG8GwZ1bmson5DlylVhdnwqg9dOyFYsOclLpZ/jaKGLp7SZ6PunnCA==
-length: 21103
+edSignature: wUawEQBB3+hFRyQm2PHZCIHJQ9XZFtKT2/9JFVhEOVTR6iBao/A4onxfLvb4Hxdi9P1TCuKLd29+lnQQE8C9Aw==
+length: 37904
 -->
