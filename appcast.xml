@@ -6,6 +6,27 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Dewline</title>
         <item>
+            <title>0.6.1</title>
+            <pubDate>Sat, 21 Nov 2026 19:23:51 +0000</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/Dewline-ArkWerx-LLC/dewline/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>219</sparkle:version>
+            <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+View > Changes no longer crashes, code files and Source mode show their text again, and the first launch walks you through a real agent change.
+
+- View > Changes no longer crashes when it lists a session.
+- Code files, Typst and LaTeX files, and Source mode show their text again; the line-number gutter had painted over it.
+- Run from the disk image or Downloads, Dewline offers to move itself to Applications before anything else, since a copy there loses its updates and hooks once the image ejects.
+- The first launch runs a short guide in Welcome.md: a demo agent edits the note, you revert one change and keep the other, then a setup list offers a folder, the Markdown handler, agent hooks and the `dewline` command, each skippable. A second launch skips it.
+- Adding the `dewline` command refuses a copy on a disk image or a translocated path and offers the move instead.
+- The disk image opens to a laid-out window: Dewline on the left, Applications on the right, in light and dark.
+
+]]></description>
+            <enclosure url="https://github.com/Dewline-ArkWerx-LLC/dewline/releases/download/v0.6.1/Dewline-0.6.1.dmg" length="15615230" type="application/octet-stream" sparkle:edSignature="BWZjHe+xHRxnvbGLKNPb6UyMqcwgg7O9pM0p1O1zdDjTPFqWCEGAi7pDvS/yX5zeSqPAbDp8jTTNekJAbxlmDw=="/>
+        </item>
+        <item>
             <title>0.6.0</title>
             <pubDate>Fri, 20 Nov 2026 18:09:37 +0000</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/ark-232/dewline/releases</sparkle:fullReleaseNotesLink>
@@ -289,6 +310,6 @@ The first public build. Dewline is a native Markdown editor for Mac: it opens th
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: wUawEQBB3+hFRyQm2PHZCIHJQ9XZFtKT2/9JFVhEOVTR6iBao/A4onxfLvb4Hxdi9P1TCuKLd29+lnQQE8C9Aw==
-length: 37904
+edSignature: iDQl6Scu9T7O47siQ1IEFH7g+UGgAFOn7axpsQ0F9WZSbU/Mv6y7lc2XypCz84kVDraGVXJKjnvLhib/7uVpCw==
+length: 39798
 -->
