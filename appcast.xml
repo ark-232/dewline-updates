@@ -6,6 +6,36 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Dewline</title>
         <item>
+            <title>0.7.0</title>
+            <pubDate>Sun, 22 Nov 2026 04:24:02 +0000</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/Dewline-ArkWerx-LLC/dewline/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>239</sparkle:version>
+            <sparkle:shortVersionString>0.7.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+Review keys follow one rule, agent changes are marked with the writer's color instead of a letter, and marks stay on their words while you type above them.
+
+- Review keys follow one rule: Return keeps and Delete reverts; ⌘ acts on one change, Shift on the note, Control on the session. Keep Session moves to ⌃⌘↩, beside Revert Session (⌃⌘⌫) (decision 0013). Quick Open moves to ⌘P and Print to ⌥⌘P; ⇧⌘O no longer opens Quick Open.
+- Typing above a marked change keeps its marks on their words. A short note opened while its window is behind draws all its text. A Mermaid chain with a labeled link (`a -->|x| b --> c`) draws every edge.
+- ⇧⌘R puts the keyboard in the Changes list on its first change, so J and K no longer type into the note. A stamp's count matches the toolbar's "N to review": git's uncommitted changes no longer add to it.
+- Change stamps say Claude Code in full. Revert and Keep are small native buttons with their keys in the tooltip and VoiceOver's help, and stay visible on a folded stamp. A revert says "Reverted · ⌘Z to undo" for 4 s. Another app's and the demo's changes take a plum hue, removed text reads at 58% ink, and the column no longer slides when the rail appears.
+- Writer badges on sidebar rows and tabs are a dot in the writer's ink and the count, instead of a letter that read as git's (A, C, D, M, R); the name is in the tooltip and VoiceOver.
+- Earlier Versions lists one write as one row: the version it replaced keeps the time it was written, and browsing adds no copy of the current text. A wrapped diff line hangs past the + and − gutter, and the diff scrolls to its first difference.
+- A note opens with the caret past its first-line H1 or front matter, not at its end; a restored tab and Back and Forward still return to where you were.
+- Tables and code blocks wider than the line width run on to 32 points from the window's right edge instead of wrapping early; prose stays at the line width.
+- The hook offer comes once you keep or revert the first change another app makes in an open note, not when a folder opens, and names each settings file it edits and whether it reaches every project.
+- Code files always open, and the sidebar, Quick Open and Find in Files list them; Settings > Editor drops Open code files.
+- Settings > Agents says whether the `dewline` command is installed, and where, with Add when it isn't. The Settings window fits each pane.
+- First run: Welcome.md is two sentences above the demo, the guide clears the note and ends on Open a Folder…, and the test prompt targets a new dewline-test.md and prints under its button.
+- Long tab names keep their extension, Find in Files has a labeled Replace toggle and one-line results, Quick Open marks code files, and app buttons are standard macOS push buttons.
+- The status bar shows a hint such as "Next: spec.md ⌃⌘↓" beside the caret's place instead of over it, and drops it once the caret moves or a change lands.
+- Dark-mode images draw at 85% brightness, inline code at 0.9 of the text size, and wrapped task items start under their label.
+
+]]></description>
+            <enclosure url="https://github.com/Dewline-ArkWerx-LLC/dewline/releases/download/v0.7.0/Dewline-0.7.0.dmg" length="15662847" type="application/octet-stream" sparkle:edSignature="9xO+Bq1hHqkOL/79QnFGiieDk7vvViEiujdWGP/vsrIyv9Bv4E2WriJWg0Ut2bj0gdGfKWHn5qgAU8wywiz0CQ=="/>
+        </item>
+        <item>
             <title>0.6.1</title>
             <pubDate>Sat, 21 Nov 2026 19:23:51 +0000</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/Dewline-ArkWerx-LLC/dewline/releases</sparkle:fullReleaseNotesLink>
@@ -310,6 +340,6 @@ The first public build. Dewline is a native Markdown editor for Mac: it opens th
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: iDQl6Scu9T7O47siQ1IEFH7g+UGgAFOn7axpsQ0F9WZSbU/Mv6y7lc2XypCz84kVDraGVXJKjnvLhib/7uVpCw==
-length: 39798
+edSignature: lN54wiVARuZ6q/R38Of/ex/FHCP7gtTE5YzPxr6wv6oeJpyFnVfKwR8oqY1q+RY5TCZH20retAiXyEDjgZ4hCA==
+length: 43804
 -->
