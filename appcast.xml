@@ -6,6 +6,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Dewline</title>
         <item>
+            <title>0.7.2</title>
+            <pubDate>Sun, 22 Nov 2026 13:41:54 +0000</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/Dewline-ArkWerx-LLC/dewline/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>255</sparkle:version>
+            <sparkle:shortVersionString>0.7.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+Source lines line up with prose in short notes, and a security fix in a sync dependency.
+
+- The `url` library moves to 2.5.9, which fixes a stack overflow on deeply nested `blob:` URLs (RUSTSEC-2026-0592). Only the sync code's networking libraries use it.
+- In a note too short to scroll, Source keeps prose's baselines at prose's line pitch instead of setting every line 2 pt lower.
+
+]]></description>
+            <enclosure url="https://github.com/Dewline-ArkWerx-LLC/dewline/releases/download/v0.7.2/Dewline-0.7.2.dmg" length="15681790" type="application/octet-stream" sparkle:edSignature="2oeluPOgdI73MLZXWml/H1A0WQwVt5TePyOBImk2qrWifQr7O2WrYaL3/snOQ9Bf8jMkPMUyT4GHQsZAQPOTAg=="/>
+        </item>
+        <item>
             <title>0.7.1</title>
             <pubDate>Sun, 22 Nov 2026 09:54:29 +0000</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/Dewline-ArkWerx-LLC/dewline/releases</sparkle:fullReleaseNotesLink>
@@ -363,6 +380,6 @@ The first public build. Dewline is a native Markdown editor for Mac: it opens th
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: AkLwRgMa2Dcm3zPMFwH/SymJhraCXJAmFa/h9Fml7dv2lykYIYFeuuwc0KTCxaGK+efsFHUGWLCBNZQ56JVYCw==
-length: 47154
+edSignature: hryzo0cUUtL99xHrmy3FgEuai9oN+FBqFWlVWHc+l8Qli9zvblTao7VMKpme+cI3adQkKIe28Gd5FxEJTGRBAg==
+length: 48441
 -->
