@@ -6,6 +6,29 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Dewline</title>
         <item>
+            <title>0.7.1</title>
+            <pubDate>Sun, 22 Nov 2026 09:54:29 +0000</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/Dewline-ArkWerx-LLC/dewline/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>248</sparkle:version>
+            <sparkle:shortVersionString>0.7.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+Code-file changes read as a diff, a change waiting off screen keeps its mark at the window's edge, and writer badges count only what is left to review.
+
+- List bullets move with their lines, a period after inline code stays on the code's line, struck text sits flush or hangs when it would push its line, and a rewrite across lines hangs its old text as one block.
+- Code-file changes read as a diff (old lines above, − and + with numbers in the gutter) with Revert and Keep on the stamp and a build error on it; every stamp shows Keep filled and its keys, sized from the body text; a revert leaves "Reverted · ⌘Z" in the margin; a named writer's insert drops the solid underline unless Differentiate Without Color or Increase Contrast is on.
+- The first-run demo says the stamp reads CLAUDE CODE, as it does, and Settings > Appearance says inline code is 0.9 of the text while code blocks match the x-height.
+- First run and setup: the guide points at the stamp's Revert button, Skip and Done read as buttons, the status bar keeps its height once shown, and Set Up Agent Hooks… opens one sheet that leads with what hooks send and names the events. A folder's empty page leads with Copy a Test Prompt, and File > Open… takes a folder.
+- Earlier Versions names the agent on every version one of its turns wrote, not only the last, when two writes land within a second.
+- Earlier Versions shows each change with two lines around it, word by word in the writer's color, says under each row what it changed ("+12 words · Backoff"), folds an agent's turn into one row, shows a pin only where it applies, and fits a 620 pt window. Mermaid labels use the text font in 6 pt boxes, H1 tracking loosens to -0.01 em, and images take a 1 px edge in both themes (12% dimmer in dark).
+- A change waiting off screen keeps its mark at the window's right edge at rest, and one that lands there pins a chip ("1 more below · Backoff ⌃⌘↓") until it is on screen or decided.
+- Writer badges count only changes waiting for Keep or Revert, so they add up to "N to review", and say "1 change by Claude Code, not reviewed"; untracked files read New; the review menu heads each writer with its ink and count; the status bar says "Next change: spec.md ⌃⌘↓". Quick Open shows its prefixes, a magnifier and a stronger selection; Find in Files rows wrap to two lines, carry the badge and git letter, and use symbol toggles and the system find highlight.
+
+]]></description>
+            <enclosure url="https://github.com/Dewline-ArkWerx-LLC/dewline/releases/download/v0.7.1/Dewline-0.7.1.dmg" length="15684863" type="application/octet-stream" sparkle:edSignature="nywlgl0zT4HXzoVm/4HUfHxmPZEhkw8FkFMR0FuRUulgufIuKCKO8qfxZYyPF2mEj9h429gE/Za3d83wpud6DQ=="/>
+        </item>
+        <item>
             <title>0.7.0</title>
             <pubDate>Sun, 22 Nov 2026 04:24:02 +0000</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/Dewline-ArkWerx-LLC/dewline/releases</sparkle:fullReleaseNotesLink>
@@ -340,6 +363,6 @@ The first public build. Dewline is a native Markdown editor for Mac: it opens th
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: lN54wiVARuZ6q/R38Of/ex/FHCP7gtTE5YzPxr6wv6oeJpyFnVfKwR8oqY1q+RY5TCZH20retAiXyEDjgZ4hCA==
-length: 43804
+edSignature: AkLwRgMa2Dcm3zPMFwH/SymJhraCXJAmFa/h9Fml7dv2lykYIYFeuuwc0KTCxaGK+efsFHUGWLCBNZQ56JVYCw==
+length: 47154
 -->
